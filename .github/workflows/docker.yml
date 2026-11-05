@@ -41,7 +41,7 @@ jobs:
             xiaosong/caddy-alidns
             ghcr.io/xiaosong/caddy-alidns
           tags: |
-            type=raw,value=latest
+            type=raw,value=latest,enable=${{ github.ref_type != 'tag' || !contains(github.ref_name, '-') }}
             type=ref,event=tag
       
       - 
