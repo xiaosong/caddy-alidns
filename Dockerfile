@@ -1,5 +1,6 @@
-# Versions checked 2026-11-05: caddy v2.11.9 (Docker Hub 2.11 tag -> 2.11.8),
-# caddy-dns/alidns v1.0.29, caddy-dns/cloudflare v0.2.4
+# Versions checked 2026-11-21: caddy 2.11 tag -> 2.11.9 (pinned to major.minor
+# on purpose so patch releases flow in on rebuild), caddy-dns/alidns v1.0.29,
+# caddy-dns/cloudflare v0.2.4
 FROM caddy:2.11-builder AS builder
 
 LABEL maintainer="i@llm.me"
